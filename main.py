@@ -1,6 +1,19 @@
-#implemwnt a python program that determines whether the given year is a leap year or not using if elif statment
-year=int(input("enter year to be checked:"))
-if(year%4==0 and year%100!=0 or year%400==0):
-  print("the year is a leap year!")
-else:
-  print("the leap year isn't a leap year!")
+class Player:
+  def Play(self):
+      print("The Player is Playing cricket.")
+    
+class Batsman(Player):
+    def Play(self):
+        print("The batsman is       batting.")
+        
+class Bowler(Player):
+  
+    def Play(self):
+        print("The bowler is bowling.")
+                 
+batsman = Batsman()
+bowler = Bowler()
+
+
+batsman.Play()
+bowler.Play()
